@@ -1,18 +1,18 @@
 {
-    "name": "kaldorei",
+    "name": "ghost-kaldorei",
     "description": "A Simple And Elegant Ghost Theme Derive From Default Theme Casper",
-    "homepage": "https://github.com/xiaoluoboding/ghost-theme-kaldorei",
+    "homepage": "https://github.com/schoeu/ghost-kaldorei",
     "version": "0.8.0",
     "author": {
-        "name": "xiaoluoboding",
-        "url": "https://github.com/xiaoluoboding"
+        "name": "schoeu",
+        "url": "https://github.com/schoeu"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xiaoluoboding/ghost-theme-kaldorei.git"
+        "url": "git+https://github.com/schoeu/ghost-kaldorei.git"
     },
     "bugs": {
-        "url": "https://github.com/xiaoluoboding/ghost-theme-kaldorei/issues"
+        "url": "https://github.com/schoeu/ghost-kaldorei/issues"
     },
     "keywords": [
         "simple",
