@@ -19,15 +19,24 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
+        var timer = null;
         $(window).scroll(function() {
-            var scrollerToTop = $('.backTop');
-            var scrollerTOC = $('.widget-toc');
-            document.documentElement.scrollTop + document.body.scrollTop > 200 ?
-                scrollerToTop.fadeIn() :
-                scrollerToTop.fadeOut();
-            document.documentElement.scrollTop + document.body.scrollTop > 250 ?
-                scrollerTOC.addClass("widget-toc-fixed") :
-                scrollerTOC.removeClass("widget-toc-fixed");
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+            }
+            else {
+                timer = setTimeout(function () {
+                    var scrollerToTop = $('.backTop');
+                    var scrollerTOC = $('.widget-toc');
+                    document.documentElement.scrollTop + document.body.scrollTop > 200 ?
+                        scrollerToTop.show() :
+                        scrollerToTop.hide();
+                    document.documentElement.scrollTop + document.body.scrollTop > 250 ?
+                        scrollerTOC.addClass("widget-toc-fixed") :
+                        scrollerTOC.removeClass("widget-toc-fixed");
+                }, 50);
+            }
         });
 
         // #backTop Button Event
@@ -74,19 +83,15 @@
 
         // toc animate effect
         // bind click event to all internal page anchors
-        $('a.data-scroll').on('click', function(e) {
-            // prevent default action and bubbling
+        /*$('a.data-scroll').on('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            // set target to anchor's "href" attribute
             var target = $(this).attr('href');
-            // scroll to each target
             $(target).velocity('scroll', {
                 duration: 500,
                 easing: 'ease-in-out'
-                //easing: 'spring'
             });
-        });
+        });*/
 
         // tooltip config
         $('[data-rel=tooltip]').tooltip();
