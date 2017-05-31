@@ -12,7 +12,7 @@
         var $postContent = $(".post-content");
         $postContent.fitVids();
 
-        $(".scroll-down").arctic_scroll();
+        //$(".scroll-down").arctic_scroll();
 
         $(".menu-button, .nav-cover, .nav-close").on("click", function(e) {
             e.preventDefault();
@@ -129,7 +129,7 @@
 
     // Arctic Scroll by Paul Adam Davis
     // https://github.com/PaulAdamDavis/Arctic-Scroll
-    $.fn.arctic_scroll = function(options) {
+    /*$.fn.arctic_scroll = function(options) {
         var defaults = {
             elem: $(this),
             speed: 500
@@ -161,11 +161,12 @@
                 }, allOptions.speed);
             }
         });
-    };
+    };*/
 })(jQuery);
 
 function scrollToTop(name, speed) {
-    if (!speed) speed = 300
+    $(window).scrollTop(0);
+    /*if (!speed) speed = 300
     if (!name) {
         $('html,body').animate({
             scrollTop: 0
@@ -176,5 +177,5 @@ function scrollToTop(name, speed) {
                 scrollTop: $(name).offset().top
             }, speed)
         }
-    }
+    }*/
 }
