@@ -72,16 +72,24 @@ var $window = $(window);
 
         var tocHieght = toc.height();
         var tocFixedHeight = $window.height() - 192;
-        tocHieght > tocFixedHeight ?
-            toc.css('height', tocFixedHeight) :
-            toc.css('height', tocHieght)
+        fixToc();
 
+        var resizeTimer = null;
         $window.resize(function() {
-            var tocFixedHeight = $(this).height() - 192;
+            if (resizeTimer) {
+                clearTimeout(resizeTimer);
+                resizeTimer = null;
+            }
+            else {
+                resizeTimer = setTimeout(fixToc, 50);
+            }
+        });
+
+        function fixToc() {
             tocHieght > tocFixedHeight ?
                 toc.css('height', tocFixedHeight) :
-                toc.css('height', tocHieght)
-        });
+                toc.css('height', tocHieght);
+        }
 
         // tooltip config
         $('[data-rel=tooltip]').tooltip();
