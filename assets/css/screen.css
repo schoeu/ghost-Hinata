@@ -1684,6 +1684,7 @@ body.nav-opened .site-wrapper {
     width: 95%;
     margin: 0 auto 10px auto;
     padding-left: 0;
+    text-align: center;
 }
 .social > li > a {
     color: #8F8F8F;
@@ -1709,6 +1710,7 @@ body.nav-opened .site-wrapper {
 }
 .navigation.site-stat {
     padding: 0px 25px;
+    text-align: center;
 }
 
 /* Site Stat Style */

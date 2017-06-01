@@ -91,9 +91,6 @@ var $window = $(window);
                 toc.css('height', tocHieght);
         }
 
-        // tooltip config
-        $('[data-rel=tooltip]').tooltip();
-
         // add archives year
         var yearArray = new Array();
         $(".archives-item").each(function() {
