@@ -147,7 +147,8 @@ textarea {
     src: url('../fonts/iconfont.eot?t=1496306454579'); /* IE9*/
     src: url('../fonts/iconfont.eot?t=1496306454579#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/iconfont.woff?t=1496306454579') format('woff'), /* chrome, firefox */
-    url('../fonts/iconfont.ttf?t=1496306454579') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.ttf?t=1496306454579') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg?t=1496306454579#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .ghosticon {
@@ -162,21 +163,21 @@ textarea {
 
 .icon-less:before { content: "\e6a5"; }
 
-.icon-account:before { content: "\e6b8"; }
+.icon-arrowcarrot2right:before { content: "\e698"; }
 
 .icon-discount:before { content: "\e6c5"; }
 
 .icon-github:before { content: "\e735"; }
 
-.icon-history:before { content: "\e6f3"; }
-
 .icon-email:before { content: "\e75e"; }
+
+.icon-icon02:before { content: "\e634"; }
+
+.icon-user:before { content: "\e85f"; }
 
 .icon-rss:before { content: "\e69a"; }
 
 .icon-wangyiyun:before { content: "\e626"; }
-
-.icon-arrow-right-2:before { content: "\e600"; }
 
 /* ==========================================================================
    2. General - Setting up some base styles
