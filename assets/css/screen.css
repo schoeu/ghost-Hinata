@@ -164,6 +164,10 @@ textarea {
 
 .icon-discount:before { content: "\e6c5"; }
 
+.icon-history:before { content: "\e6f3"; }
+
+.icon-less:before { content: "\e6a5"; }
+
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
