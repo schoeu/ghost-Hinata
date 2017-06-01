@@ -160,13 +160,23 @@ textarea {
 
 .icon-category:before { content: "\e699"; }
 
+.icon-less:before { content: "\e6a5"; }
+
 .icon-account:before { content: "\e6b8"; }
 
 .icon-discount:before { content: "\e6c5"; }
 
+.icon-github:before { content: "\e735"; }
+
 .icon-history:before { content: "\e6f3"; }
 
-.icon-less:before { content: "\e6a5"; }
+.icon-email:before { content: "\e75e"; }
+
+.icon-rss:before { content: "\e69a"; }
+
+.icon-wangyiyun:before { content: "\e626"; }
+
+.icon-arrow-right-2:before { content: "\e600"; }
 
 /* ==========================================================================
    2. General - Setting up some base styles
