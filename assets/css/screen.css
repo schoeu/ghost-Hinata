@@ -483,6 +483,11 @@ body.nav-opened .site-wrapper {
     word-wrap: break-word;
 }
 
+.post-smallfont{
+    font-size: 12px;
+    font-style: normal;
+    vertical-align: bottom;
+}
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 
