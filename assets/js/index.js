@@ -47,7 +47,7 @@ var $window = $(window);
         });
 
         // highlight config
-        //hljs.initHighlightingOnLoad();
+        hljs.initHighlightingOnLoad();
 
         // numbering for pre>code blocks
         $(function() {
