@@ -1705,7 +1705,7 @@ body.nav-opened .site-wrapper {
 
 /* Social Style */
 
-.navigation.social {
+.navigation {
     padding-bottom: 10px;
 }
 .navigation > ul {
@@ -1716,9 +1716,15 @@ body.nav-opened .site-wrapper {
     padding: 10px;
     margin: 5px;
 }
+.social{
+    width: 90%;
+    margin: 0 auto 10px auto;
+    padding-left: 0;
+}
 .social > li > a {
     color: #8F8F8F;
 }
+
 .social .social-weibo:hover {
     color: #D9534F;
 }
@@ -1745,7 +1751,7 @@ body.nav-opened .site-wrapper {
 
 .site-stat-item {
     display: inline-block;
-    padding: 0px 28px;
+    padding: 0 15px;
 }
 .site-stat-item:first-child {
     border-left: none;
@@ -1887,19 +1893,6 @@ body.nav-opened .site-wrapper {
     .tag-meta .tag-meta-content {
         padding: 8px 20px;
         text-align: center;
-    }
-}
-
-/* ==========================================================================
-   18. Media Queries - Smaller than 1024px for (tablet - landscape)
-   ========================================================================== */
-
-@media only screen and (max-width: 1024px) {
-    .site-stat-item {
-        padding: 0 15px;
-    }
-    .navigation > ul > li {
-        padding: 0;
     }
 }
 
