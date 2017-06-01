@@ -1437,7 +1437,7 @@ body.nav-opened .site-wrapper {
 }
 .navigation > ul > li {
     display: inline-block;
-    padding: 10px;
+    padding: 5px 10px;
     margin: 5px;
 }
 .social{
@@ -1448,6 +1448,7 @@ body.nav-opened .site-wrapper {
 }
 .social > li > a {
     color: #8F8F8F;
+    text-decoration: none;
 }
 
 .social .social-weibo:hover {
@@ -2044,7 +2045,7 @@ code.has-numbering {
 
 .iconfont {
     font-family:"iconfont" !important;
-    font-size:16px;
+    font-size:28px;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
