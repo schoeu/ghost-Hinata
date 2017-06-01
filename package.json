@@ -1,18 +1,18 @@
 {
-    "name": "ghost-kaldorei",
+    "name": "ghost-hinata",
     "description": "A Simple And Elegant Ghost Theme Derive From Default Theme Casper",
-    "homepage": "https://github.com/schoeu/ghost-kaldorei",
-    "version": "0.8.0",
+    "homepage": "https://github.com/schoeu/ghost-hinata",
+    "version": "0.0.1",
     "author": {
         "name": "schoeu",
         "url": "https://github.com/schoeu"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/schoeu/ghost-kaldorei.git"
+        "url": "git+https://github.com/schoeu/ghost-hinata.git"
     },
     "bugs": {
-        "url": "https://github.com/schoeu/ghost-kaldorei/issues"
+        "url": "https://github.com/schoeu/ghost-hinata/issues"
     },
     "keywords": [
         "simple",
