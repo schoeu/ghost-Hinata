@@ -165,50 +165,6 @@ textarea {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Each icon is created by inserting the correct character into the
-   content of the :before pseudo element. Like a boss. */
-
-.icon-ghost:before {
-    content: "\f600";
-}
-.icon-feed:before {
-    content: "\f601";
-}
-.icon-twitter:before {
-    content: "\f602";
-    font-size: 1.1em;
-}
-.icon-google-plus:before {
-    content: "\f603";
-}
-.icon-facebook:before {
-    content: "\f604";
-}
-.icon-arrow-left:before {
-    content: "\f605";
-}
-.icon-stats:before {
-    content: "\f606";
-}
-.icon-location:before {
-    content: "\f607";
-    margin-left: -3px;
-    /* Tracking fix */
-}
-.icon-link:before {
-    content: "\f608";
-}
-.icon-menu:before {
-    content: "\f609";
-}
-
-/*
-    IMPORTANT: When making any changes to the icon font, be sure to increment
-    the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
-    This forces browsers to download the new font file.
-*/
-
-
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
@@ -322,31 +278,6 @@ hr {
     border-top: #EBF2F6 1px solid !important;
     margin: 3.2em 0;
     padding: 0;
-}
-blockquote {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 15px 20px !important;
-    margin: 1.75em 0 1.75em -2.2em;
-    font-size: 1.6rem !important;
-    border-left: #4A4A4A 0.4em solid;
-    background-color: rgba(102, 128, 153, 0.05);
-    border-left: 5px solid rgba(102, 128, 153, 0.075) !important;
-}
-blockquote small {
-    display: inline-block;
-    margin: 0.8em 0 0.8em 1.5em;
-    font-size: 0.9em;
-    color: #CCC;
-}
-blockquote small:before {
-    content: "\2014 \00A0";
-}
-blockquote cite {
-    font-weight: 700;
-}
-blockquote cite a {
-    font-weight: normal;
 }
 mark {
     background-color: #fdffb6;
@@ -704,43 +635,6 @@ body.nav-opened .site-wrapper {
     line-height: 1.5em;
 }
 
-/* ==========================================================================
-   5. Single Post - When you click on an individual post
-   ========================================================================== */
-
-.post-template .post-header {
-    margin-bottom: 3.4rem;
-}
-.post-template .post-title {
-    margin-bottom: 0;
-}
-.post-template .post-date {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
-
-/* Stop elements, such as img wider than the post content, from
-   creating horizontal scroll - slight hack due to imperfections
-   with browser width % calculations and rounding */
-
-.post-template .content {
-    overflow: hidden;
-}
-
-/* Tweak the .post wrapper style */
-
-.post-template .post {
-    /*margin-top: 0;*/
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-/* Kill that stylish little circle that was on the border, too */
-
-.post-template .post:after {
-    display: none;
-}
 
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
@@ -1063,119 +957,6 @@ body.nav-opened .site-wrapper {
     display: none;
 }
 
-/* ==========================================================================
-   7. Read More - Next/Prev Post Links
-   ========================================================================== */
-
-.read-next {
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    margin-top: 10rem;
-}
-.read-next-story {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 50%;
-    text-decoration: none;
-    position: relative;
-    text-align: center;
-    color: #fff;
-    background: #222 no-repeat center center;
-    background-size: cover;
-    overflow: hidden;
-}
-.read-next-story:hover:before {
-    background: rgba(0, 0, 0, 0.8);
-    transition: all 0.2s ease;
-}
-.read-next-story:hover .post:before {
-    color: #222;
-    background: #fff;
-    transition: all 0.2s ease;
-}
-.read-next-story:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: all 0.5s ease;
-}
-.read-next-story .post {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-.read-next-story .post:before {
-    content: "Read This Next";
-    padding: 4px 10px 5px;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: "Microsoft Yahei", "Monaco", sans-serif;
-    color: rgba(255, 255, 255, 0.8);
-    border: rgba(255, 255, 255, 0.5) 1px solid;
-    border-radius: 4px;
-    transition: all 0.5s ease;
-}
-.read-next-story.prev .post:before {
-    content: "You Might Enjoy";
-}
-.read-next-story h2 {
-    margin-top: 1rem;
-    color: #fff;
-}
-.read-next-story p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* Special styles for posts with no cover images */
-
-.read-next-story.no-cover {
-    background: #f5f8fa;
-}
-.read-next-story.no-cover:before {
-    display: none;
-}
-.read-next-story.no-cover .post:before {
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.2);
-}
-.read-next-story.no-cover h2 {
-    color: rgba(0, 0, 0, 0.8);
-}
-.read-next-story.no-cover p {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-/* if there are two posts without covers, put a border between them */
-
-.read-next-story.no-cover + .read-next-story.no-cover {
-    border-left: rgba(0, 0, 100, 0.04) 1px solid;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/* Correctly position site-footer when next to the .read-next container */
-
-.read-next + .site-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-}
 
 /* ==========================================================================
    8. Third Party Elements - Embeds from other services
