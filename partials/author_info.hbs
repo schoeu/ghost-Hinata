@@ -17,7 +17,8 @@
             {{#if bio}}
                 {{bio}}
             {{else}}
-                <em><a href="{{@blog.url}}/ghost/team/{{slug}}/">(添加签名档)</a></em>
+                {{!<a href="@blog.url/ghost/team/slug/">(添加签名档)</a>  }}
+                <em><a href="/ghost/team/{{slug}}/">(添加签名档)</a></em>
             {{/if}}
         </p>
         <hr>

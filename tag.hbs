@@ -5,7 +5,8 @@
 <header class="main-header">
     <nav class="container main-nav clearfix">
         <div class="main-nav-title pull-left">
-            <a class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a>
+            {{!<a class="blog-title" href="@blog.url">@blog.title</a>  }}
+            <a class="blog-title" href="/">{{@blog.title}}</a>
         </div>
         {{#if @blog.navigation}}
             {{navigation}}
