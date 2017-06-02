@@ -1714,9 +1714,6 @@ body.nav-opened .site-wrapper {
     .post-meta-date {
         display: none;
     }
-    .post-template .post-header {
-        margin-bottom: 3.4rem;
-    }
     .post-template .post-meta-date {
         display: inline-block;
     }
@@ -2069,4 +2066,7 @@ blockquote {
     font-size: 1.6rem;
     background-color: rgba(102, 128, 153, 0.05);
     border-left: 5px solid rgba(102, 128, 153, 0.075) !important;
+}
+.post-article-header {
+    margin-bottom: 3.4rem;
 }
