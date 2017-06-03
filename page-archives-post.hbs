@@ -10,7 +10,7 @@
     <nav class="container main-nav clearfix">
         <div class="main-nav-title pull-left">
             {{!<a class="blog-title" href="@blog.url">@blog.title</a>  }}
-            <a class="blog-title" href="/}}">{{@blog.title}}</a>
+            <a class="blog-title" href="/">{{@blog.title}}</a>
         </div>
         {{#if @blog.navigation}}
             {{navigation}}
@@ -30,7 +30,7 @@
                     {{! count posts }}
                     {{#get "posts" as |posts postPages|}}
                     {{! Use our pages (pagination) object }}
-                    <strong>目前共计{{postPages.total}}篇日志，继续努力！</strong>
+                    <strong>目前共计{{postPages.total}}篇日志</strong>
                     {{/get}}
                 </span>
                 {{#get "posts" limit="all" order="published_at desc"}}
