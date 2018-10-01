@@ -2070,3 +2070,6 @@ blockquote {
 .post-article-header {
     margin-bottom: 3.4rem;
 }
+#container {
+    overflow: hidden;
+}
